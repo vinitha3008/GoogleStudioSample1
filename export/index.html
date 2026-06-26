@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Financial Consulting | Wealth Management & Strategic Advisory</title>
+  
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  
+  <!-- Custom CSS Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#faf9f6] text-[#1e293b] font-sans antialiased selection:bg-emerald-500/20">
+
+  <!-- --- NAVIGATION HEADER --- -->
+  <header class="sticky top-0 z-50 bg-[#faf9f6]/95 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Logo / Name -->
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="w-10 h-10 rounded-lg bg-emerald-900 flex items-center justify-center text-amber-400 font-serif font-bold text-lg shadow-md group-hover:bg-emerald-800 transition">
+          A
+        </div>
+        <div>
+          <span class="block font-serif font-bold text-lg tracking-tight text-emerald-900">APEX</span>
+          <span class="block text-[10px] uppercase font-semibold tracking-widest text-slate-400 -mt-1">Financial Consulting</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu Links -->
+      <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+        <a href="#services" class="hover:text-emerald-800 transition">Services</a>
+        <a href="#tools" class="hover:text-emerald-800 transition">Interactive Tools</a>
+        <a href="#testimonials" class="hover:text-emerald-800 transition">Client Success</a>
+        <a href="#credentials" class="hover:text-emerald-800 transition">Trust & Standards</a>
+      </nav>
+
+      <!-- Desktop Action CTA -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#booking" class="bg-emerald-900 hover:bg-emerald-800 text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-sm border border-emerald-950 transition">
+          Book Consultation
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-emerald-900 transition" aria-label="Toggle Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-6 py-4 flex flex-col gap-3 font-medium text-slate-600 shadow-lg">
+      <a href="#services" class="hover:text-emerald-800 py-1 transition">Services</a>
+      <a href="#tools" class="hover:text-emerald-800 py-1 transition">Interactive Tools</a>
+      <a href="#testimonials" class="hover:text-emerald-800 py-1 transition">Client Success</a>
+      <a href="#credentials" class="hover:text-emerald-800 py-1 transition">Trust & Standards</a>
+      <hr class="border-slate-100 my-1">
+      <a href="#booking" class="bg-emerald-900 text-white text-center text-sm font-semibold py-2.5 rounded-lg shadow-sm transition mt-1">
+        Book Consultation
+      </a>
+    </div>
+  </header>
+
+
+  <!-- --- HERO SECTION --- -->
+  <section class="relative hero-gradient text-white py-20 lg:py-28 overflow-hidden">
+    <!-- Subtle Background Grid Pattern -->
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <!-- Hero Copy -->
+      <div class="lg:col-span-7 flex flex-col items-start">
+        <div class="inline-flex items-center gap-2 bg-white/10 text-amber-300 text-xs font-semibold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-white/15 mb-6">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          Bespoke Strategic Solutions
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight leading-[1.1] text-white mb-6">
+          Preserve, Grow, and <span class="gold-text-gradient font-serif">Sustain</span> Your Generational Wealth.
+        </h1>
+        <p class="text-lg text-slate-200 font-light max-w-xl mb-8 leading-relaxed">
+          We offer elite-tier wealth modeling, customized tax restructuring advisory, and tailored retirement roadmap solutions for high-net-worth families and corporate pioneers.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <a href="#booking" class="bg-amber-400 hover:bg-amber-500 text-emerald-950 font-bold px-7 py-3.5 rounded-lg text-center shadow-md border border-amber-300 transition hover:-translate-y-0.5">
+            Begin Financial Alignment
+          </a>
+          <a href="#tools" class="bg-white/10 hover:bg-white/15 text-white font-medium px-7 py-3.5 rounded-lg text-center border border-white/20 transition">
+            Access Diagnostic Tools
+          </a>
+        </div>
+
+        <!-- Trust Stats Bar -->
+        <div class="grid grid-cols-3 gap-6 sm:gap-12 mt-12 pt-8 border-t border-white/10 w-full">
+          <div>
+            <span class="block text-2xl sm:text-3xl font-serif font-bold gold-text-gradient">$450M+</span>
+            <span class="block text-[11px] text-slate-300 uppercase tracking-wider mt-1">Assets Managed</span>
+          </div>
+          <div>
+            <span class="block text-2xl sm:text-3xl font-serif font-bold gold-text-gradient">98.4%</span>
+            <span class="block text-[11px] text-slate-300 uppercase tracking-wider mt-1">Client Retention</span>
+          </div>
+          <div>
+            <span class="block text-2xl sm:text-3xl font-serif font-bold gold-text-gradient">15+ Yrs</span>
+            <span class="block text-[11px] text-slate-300 uppercase tracking-wider mt-1">Advisory Integrity</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Illustration / Render -->
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="relative w-full max-w-md aspect-square lg:aspect-auto">
+          <!-- Outer Decorative Frame -->
+          <div class="absolute inset-0 bg-gradient-to-tr from-amber-400 to-transparent opacity-10 rounded-3xl blur-2xl"></div>
+          
+          <!-- Image Container with Gold Border -->
+          <div class="relative bg-[#022c22] rounded-2xl p-2.5 border border-white/10 shadow-2xl overflow-hidden gold-border-glow animate-float">
+            <!-- Dynamically generated hero image from asset -->
+            <img 
+              src="src/assets/images/financial_hero_1782466515106.jpg" 
+              alt="Apex Financial Visualization" 
+              class="w-full h-full object-cover rounded-xl grayscale-20 contrast-125 hover:scale-102 transition duration-500"
+              referrerpolicy="no-referrer"
+            >
+            <!-- Badge Overlay -->
+            <div class="absolute bottom-6 left-6 right-6 bg-slate-900/90 backdrop-blur-md p-4 rounded-xl border border-white/10 shadow-lg flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              </div>
+              <div>
+                <span class="block text-xs font-semibold uppercase tracking-wider text-amber-400">Elite Client Shield</span>
+                <span class="block text-[10px] text-slate-300">Fiduciary duty backed by institutional security</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- --- VALUE STATEMENT BAR --- -->
+  <section class="bg-emerald-950 border-t border-emerald-900 py-6 text-white text-xs font-medium tracking-widest uppercase">
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap gap-8 items-center justify-center md:justify-between text-center md:text-left text-slate-300">
+      <span class="flex items-center gap-2"><span class="h-1.5 w-1.5 bg-amber-400 rounded-full"></span> COMPLETE FIDUCIARY DUTY</span>
+      <span class="flex items-center gap-2"><span class="h-1.5 w-1.5 bg-amber-400 rounded-full"></span> UNALIGNED REVENUE-SHARING FREE</span>
+      <span class="flex items-center gap-2"><span class="h-1.5 w-1.5 bg-amber-400 rounded-full"></span> PORTFOLIO ALIGNED RISK DESIGN</span>
+    </div>
+  </section>
+
+
+  <!-- --- ADVISORY SERVICES SECTION --- -->
+  <section id="services" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-emerald-800 text-xs font-bold uppercase tracking-widest block mb-3">Structured Capability Pillars</span>
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 tracking-tight">Our Areas of Financial Excellence</h2>
+      <div class="w-16 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+      <p class="text-slate-500 font-light mt-5">
+        We specialize in complex portfolio strategies and bespoke optimization tactics designed to weather macro cycles and inflation headwinds.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Service Card 1 -->
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-500/20 hover:-translate-y-1.5 transition duration-300 flex flex-col h-full group">
+        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center mb-6 group-hover:bg-emerald-900 group-hover:text-white transition duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-emerald-900 transition">Wealth & Portfolio Design</h3>
+        <p class="text-sm text-slate-500 leading-relaxed font-light mb-6 flex-grow">
+          Bespoke asset allocation models focused on preservation, low correlation, and dynamic multi-generational expansion.
+        </p>
+        <a href="#booking" class="text-xs font-bold text-emerald-800 hover:text-emerald-950 inline-flex items-center gap-1 mt-auto">
+          Explore Wealth Design <span class="font-serif text-amber-500 text-base">&rarr;</span>
+        </a>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-500/20 hover:-translate-y-1.5 transition duration-300 flex flex-col h-full group">
+        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center mb-6 group-hover:bg-emerald-900 group-hover:text-white transition duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-emerald-900 transition">Strategic Retirement Mapping</h3>
+        <p class="text-sm text-slate-500 leading-relaxed font-light mb-6 flex-grow">
+          Tailored cash-flow modeling protecting your passive distributions from market volatility, tax erosion, and lifestyle drag.
+        </p>
+        <a href="#booking" class="text-xs font-bold text-emerald-800 hover:text-emerald-950 inline-flex items-center gap-1 mt-auto">
+          Explore Retirement <span class="font-serif text-amber-500 text-base">&rarr;</span>
+        </a>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-500/20 hover:-translate-y-1.5 transition duration-300 flex flex-col h-full group">
+        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center mb-6 group-hover:bg-emerald-900 group-hover:text-white transition duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-emerald-900 transition">Aggressive Tax Strategy</h3>
+        <p class="text-sm text-slate-500 leading-relaxed font-light mb-6 flex-grow">
+          Strategic structuring, asset location, trusts, and corporate entities alignment to maximize capital efficiency legally.
+        </p>
+        <a href="#booking" class="text-xs font-bold text-emerald-800 hover:text-emerald-950 inline-flex items-center gap-1 mt-auto">
+          Explore Tax Structuring <span class="font-serif text-amber-500 text-base">&rarr;</span>
+        </a>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-500/20 hover:-translate-y-1.5 transition duration-300 flex flex-col h-full group">
+        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center mb-6 group-hover:bg-emerald-900 group-hover:text-white transition duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-emerald-900 transition">Corporate Treasury Advisory</h3>
+        <p class="text-sm text-slate-500 leading-relaxed font-light mb-6 flex-grow">
+          Helping business owners optimize working capital reserves, debt restructuring, cash management, and merger preparations.
+        </p>
+        <a href="#booking" class="text-xs font-bold text-emerald-800 hover:text-emerald-950 inline-flex items-center gap-1 mt-auto">
+          Explore Treasury <span class="font-serif text-amber-500 text-base">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- --- INTERACTIVE TOOLS CONTAINER SECTION --- -->
+  <section id="tools" class="py-20 bg-slate-50 border-y border-slate-200/50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-emerald-800 text-xs font-bold uppercase tracking-widest block mb-3">Complimentary Diagnostic suite</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 tracking-tight">Financial Alignment & Growth Planning</h2>
+        <p class="text-slate-500 font-light mt-3">Toggle between our high-accuracy interest calculator and our custom-designed financial health self-diagnostic.</p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="flex justify-center border-b border-slate-200 max-w-lg mx-auto mb-12">
+        <button id="tab-calc" class="tab-btn active px-8 py-4 font-semibold text-sm transition focus:outline-none border-b-2 border-brand-mint text-brand-emerald">
+          Wealth Growth Calculator
+        </button>
+        <button id="tab-quiz" class="tab-btn px-8 py-4 font-semibold text-sm transition focus:outline-none text-slate-500">
+          Financial Health Assessment
+        </button>
+      </div>
+
+      <!-- Tab Content 1: Wealth Accumulation Calculator -->
+      <div id="content-calc" class="grid lg:grid-cols-12 gap-12 bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-lg max-w-5xl mx-auto">
+        <!-- Controls Column -->
+        <div class="lg:col-span-6 space-y-8">
+          <h3 class="text-2xl font-bold font-serif text-emerald-950 border-b border-slate-100 pb-4">Define Capital Inputs</h3>
+          
+          <!-- Initial Investment Slider -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-sm font-semibold text-slate-600">Initial Principal Investment</label>
+              <span id="val-initial" class="text-emerald-800 font-mono font-semibold text-base">$50,000</span>
+            </div>
+            <input id="initial-investment" type="range" min="0" max="1000000" step="5000" value="50000">
+            <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+              <span>$0</span>
+              <span>$500K</span>
+              <span>$1M+</span>
+            </div>
+          </div>
+
+          <!-- Monthly Savings Slider -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-sm font-semibold text-slate-600">Monthly Contribution Savings</label>
+              <span id="val-monthly" class="text-emerald-800 font-mono font-semibold text-base">$500</span>
+            </div>
+            <input id="monthly-contribution" type="range" min="0" max="10000" step="100" value="500">
+            <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+              <span>$0</span>
+              <span>$5,000</span>
+              <span>$10,000</span>
+            </div>
+          </div>
+
+          <!-- Annual Interest Rate Slider -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-sm font-semibold text-slate-600">Target Annual Compound Return</label>
+              <span id="val-rate" class="text-emerald-800 font-mono font-semibold text-base">7.5%</span>
+            </div>
+            <input id="interest-rate" type="range" min="0" max="15" step="0.5" value="7.5">
+            <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+              <span>0% (Cash)</span>
+              <span>7.5% (Balanced)</span>
+              <span>15% (Aggressive)</span>
+            </div>
+          </div>
+
+          <!-- Investment Timeframe Slider -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-sm font-semibold text-slate-600">Compounding Duration Timeline</label>
+              <span id="val-years" class="text-emerald-800 font-mono font-semibold text-base">20 yrs</span>
+            </div>
+            <input id="investment-years" type="range" min="1" max="40" step="1" value="20">
+            <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+              <span>1 Year</span>
+              <span>20 Years</span>
+              <span>40 Years</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Output Graphic Column -->
+        <div class="lg:col-span-6 bg-slate-900 text-white p-8 rounded-2xl flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-tr from-emerald-900/40 to-transparent pointer-events-none"></div>
+          
+          <div class="relative z-10">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-amber-400">PROJECTED VALUE AT TIMELINE TERMINATION</span>
+            <div id="result-total" class="text-4xl sm:text-5xl font-bold font-serif gold-text-gradient mt-2">$375,419</div>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">Estimated total accumulated portfolio balance.</p>
+          </div>
+
+          <!-- Growth Bar / Visualization Component -->
+          <div class="my-8 relative z-10 space-y-4">
+            <div class="h-6 w-full bg-slate-800 rounded-full flex overflow-hidden p-1 border border-white/5">
+              <div id="growth-bar-principal" class="bg-slate-500 rounded-l-full transition-all duration-300" style="width: 45%;"></div>
+              <div id="growth-bar-interest" class="bg-emerald-500 rounded-r-full transition-all duration-300" style="width: 55%;"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 text-xs">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-slate-500 rounded-full inline-block"></span>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase">Your Total Invested Capital</span>
+                  <span id="result-principal" class="font-mono font-semibold text-white mt-0.5">$170,000</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-emerald-500 rounded-full inline-block"></span>
+                <div>
+                  <span class="block text-emerald-400 text-[10px] uppercase">Compound Interest Growth</span>
+                  <span id="result-interest" class="font-mono font-semibold text-white mt-0.5">$205,419</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom CTA to action -->
+          <div class="border-t border-white/10 pt-6 relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="text-[11px] text-slate-400 max-w-xs">
+              Ready to construct a tailored portfolio using institutional-grade products?
+            </div>
+            <a href="#booking" class="bg-amber-400 text-emerald-950 font-bold px-4 py-2.5 rounded-lg text-xs text-center hover:bg-amber-500 transition whitespace-nowrap">
+              Lock in Strategy
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Financial Health Assessment Quiz -->
+      <div id="content-quiz" class="hidden max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-lg">
+        <h3 class="text-2xl font-bold font-serif text-emerald-950 border-b border-slate-100 pb-4 mb-8 text-center">Financial Resilience Quiz</h3>
+
+        <!-- Step 1: Emergency Reserve -->
+        <div class="quiz-step" data-step="0">
+          <div class="mb-4 flex items-center justify-between text-xs text-slate-400 font-semibold uppercase tracking-wider">
+            <span>QUESTION 1 OF 5</span>
+            <span>20% Complete</span>
+          </div>
+          <h4 class="text-xl font-bold text-slate-800 mb-6">How many months of net living expenses do you currently hold in liquid cash reserves?</h4>
+          
+          <div class="space-y-3">
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-0" value="0" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">Less than 1 month — I live paycheck to paycheck</span>
+            </label>
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-0" value="10" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">1 to 3 months — I have some emergency padding</span>
+            </label>
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-0" value="20" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">6 months or more — fully funded cash buffer</span>
+            </label>
+          </div>
+
+          <div class="flex justify-end mt-8">
+            <button id="next-btn-0" class="quiz-next-btn bg-emerald-900 text-white font-semibold text-xs px-5 py-2.5 rounded-lg opacity-50 cursor-not-allowed transition" disabled>
+              Continue &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: High Interest Debt -->
+        <div class="quiz-step hidden" data-step="1">
+          <div class="mb-4 flex items-center justify-between text-xs text-slate-400 font-semibold uppercase tracking-wider">
+            <span>QUESTION 2 OF 5</span>
+            <span>40% Complete</span>
+          </div>
+          <h4 class="text-xl font-bold text-slate-800 mb-6">Which of the following best describes your relationship with high-interest consumer debt (credit cards, personal loans)?</h4>
+          
+          <div class="space-y-3">
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-1" value="0" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">Significant — I carry substantial revolving balances each month</span>
+            </label>
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-1" value="10" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">Minor — Occasional balances, but currently liquidating</span>
+            </label>
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-1" value="20" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">Debt-Free — No consumer debts, credit cards paid in full monthly</span>
+            </label>
+          </div>
+
+          <div class="flex justify-between mt-8">
+            <button class="quiz-back-btn text-slate-500 text-xs font-semibold px-4 py-2 hover:text-slate-800 transition">
+              &larr; Back
+            </button>
+            <button id="next-btn-1" class="quiz-next-btn bg-emerald-900 text-white font-semibold text-xs px-5 py-2.5 rounded-lg opacity-50 cursor-not-allowed transition" disabled>
+              Continue &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 3: Savings Rate -->
+        <div class="quiz-step hidden" data-step="2">
+          <div class="mb-4 flex items-center justify-between text-xs text-slate-400 font-semibold uppercase tracking-wider">
+            <span>QUESTION 3 OF 5</span>
+            <span>60% Complete</span>
+          </div>
+          <h4 class="text-xl font-bold text-slate-800 mb-6">What percentage of your net monthly take-home income is directed into savings and investments?</h4>
+          
+          <div class="space-y-3">
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-2" value="0" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">Under 5% — I save whatever happens to be left over (often $0)</span>
+            </label>
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-2" value="10" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">5% to 15% — Consistent micro-contributions, but could do more</span>
+            </label>
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-2" value="20" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">15% or more — Highly prioritized, automated investment distributions</span>
+            </label>
+          </div>
+
+          <div class="flex justify-between mt-8">
+            <button class="quiz-back-btn text-slate-500 text-xs font-semibold px-4 py-2 hover:text-slate-800 transition">
+              &larr; Back
+            </button>
+            <button id="next-btn-2" class="quiz-next-btn bg-emerald-900 text-white font-semibold text-xs px-5 py-2.5 rounded-lg opacity-50 cursor-not-allowed transition" disabled>
+              Continue &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 4: Asset Diversification -->
+        <div class="quiz-step hidden" data-step="3">
+          <div class="mb-4 flex items-center justify-between text-xs text-slate-400 font-semibold uppercase tracking-wider">
+            <span>QUESTION 4 OF 5</span>
+            <span>80% Complete</span>
+          </div>
+          <h4 class="text-xl font-bold text-slate-800 mb-6">How diversified are your financial assets (Equities, Real Estate, Bonds, Hard assets)?</h4>
+          
+          <div class="space-y-3">
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-3" value="0" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">Not Diversified — Everything is in standard savings or a single stock</span>
+            </label>
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-3" value="10" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">Moderately — I hold standard index funds or general mutual funds</span>
+            </label>
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-3" value="20" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">Highly — Multi-sector global portfolio with custom cash flow design</span>
+            </label>
+          </div>
+
+          <div class="flex justify-between mt-8">
+            <button class="quiz-back-btn text-slate-500 text-xs font-semibold px-4 py-2 hover:text-slate-800 transition">
+              &larr; Back
+            </button>
+            <button id="next-btn-3" class="quiz-next-btn bg-emerald-900 text-white font-semibold text-xs px-5 py-2.5 rounded-lg opacity-50 cursor-not-allowed transition" disabled>
+              Continue &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 5: Estate & Tax Optimization -->
+        <div class="quiz-step hidden" data-step="4">
+          <div class="mb-4 flex items-center justify-between text-xs text-slate-400 font-semibold uppercase tracking-wider">
+            <span>QUESTION 5 OF 5</span>
+            <span>100% Complete</span>
+          </div>
+          <h4 class="text-xl font-bold text-slate-800 mb-6">Do you have an active Tax-Mitigation Strategy and a structured Estate Plan (Trusts, Wills)?</h4>
+          
+          <div class="space-y-3">
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-4" value="0" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">No Plan — I pay standard income tax and have no active trust structures</span>
+            </label>
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-4" value="10" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">Partial — I use standard retirement accounts (401k/IRA) and a basic Will</span>
+            </label>
+            <label class="flex items-center p-4 border border-slate-100 rounded-xl hover:bg-slate-50 hover:border-emerald-500/20 cursor-pointer transition">
+              <input type="radio" name="quiz-4" value="20" class="quiz-option h-4 w-4 text-emerald-800 focus:ring-emerald-500 border-slate-300">
+              <span class="ml-3 text-sm font-medium text-slate-700">Fully Optimized — Advanced dynamic structures (ILITs, LLPs, tax locations)</span>
+            </label>
+          </div>
+
+          <div class="flex justify-between mt-8">
+            <button class="quiz-back-btn text-slate-500 text-xs font-semibold px-4 py-2 hover:text-slate-800 transition">
+              &larr; Back
+            </button>
+            <button id="next-btn-4" class="quiz-next-btn bg-emerald-900 text-white font-semibold text-xs px-5 py-2.5 rounded-lg opacity-50 cursor-not-allowed transition" disabled>
+              Calculate Health Score &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Quiz Result Screen -->
+        <div id="quiz-result" class="hidden text-center space-y-6">
+          <div class="w-20 h-20 bg-emerald-50 border border-emerald-100 rounded-full flex items-center justify-center mx-auto text-emerald-800">
+            <svg class="w-10 h-10 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">YOUR DIAGNOSTIC ALIGNMENT INDEX</span>
+            <div id="quiz-score-pct" class="text-5xl font-serif font-bold text-emerald-950 mt-1">74%</div>
+            <div id="quiz-tier-label" class="inline-block mt-2 bg-amber-100 text-amber-800 font-bold text-xs px-3 py-1 rounded-full border border-amber-200">Steady Growth (Moderate)</div>
+          </div>
+
+          <!-- Gauge Fill -->
+          <div class="max-w-md mx-auto bg-slate-100 h-2 rounded-full overflow-hidden">
+            <div id="quiz-gauge-fill" class="h-full bg-emerald-500 transition-all duration-700" style="width: 74%;"></div>
+          </div>
+
+          <div class="max-w-md mx-auto p-5 bg-slate-50 rounded-xl border border-slate-100 text-sm text-slate-600 text-left leading-relaxed">
+            <strong class="block text-slate-800 mb-1.5 font-semibold">Immediate Professional Recommendation:</strong>
+            <span id="quiz-advice">You are on the right track, but have some key vulnerabilities. It is highly recommended to build a firmer 6-month safety reserve, eliminate any non-mortgage high-interest debts, and increase your monthly savings rate to 15%+.</span>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-sm mx-auto pt-4">
+            <button id="quiz-reset-btn" class="text-slate-500 hover:text-slate-800 text-xs font-semibold px-4 py-2 transition">
+              Restart Diagnostic
+            </button>
+            <a href="#booking" class="bg-emerald-900 text-white font-semibold text-xs px-5 py-3 rounded-lg hover:bg-emerald-800 transition">
+              Schedule Free Advisory Review
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- --- TESTIMONIAL CAROUSEL --- -->
+  <section id="testimonials" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-emerald-800 text-xs font-bold uppercase tracking-widest block mb-3">Client Alignment Proof</span>
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 tracking-tight">Success Stories of Strategic Guidance</h2>
+      <div class="w-16 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+        <div>
+          <!-- Stars -->
+          <div class="flex gap-1 text-amber-400 mb-6">
+            &#9733; &#9733; &#9733; &#9733; &#9733;
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed font-light mb-6 italic">
+            "Before partnering with Apex, our family wealth structure was highly vulnerable to local state taxes. Their restructuring design optimized our asset locations, preserving significant equity for our children."
+          </p>
+        </div>
+        <div class="flex items-center gap-3 border-t border-slate-50 pt-5">
+          <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden flex items-center justify-center font-bold text-emerald-900 text-sm font-serif">
+            H
+          </div>
+          <div>
+            <span class="block text-sm font-semibold text-slate-800">Harris Henderson</span>
+            <span class="block text-[10px] text-slate-400 uppercase">Founder, Henderson Tech</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+        <div>
+          <!-- Stars -->
+          <div class="flex gap-1 text-amber-400 mb-6">
+            &#9733; &#9733; &#9733; &#9733; &#9733;
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed font-light mb-6 italic">
+            "Their tailored retirement cash flow model gave us complete peace of mind during the 2022 inflationary spike. We knew exactly which tranches to draw, completely insulated from equity volatility."
+          </p>
+        </div>
+        <div class="flex items-center gap-3 border-t border-slate-50 pt-5">
+          <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden flex items-center justify-center font-bold text-emerald-900 text-sm font-serif">
+            M
+          </div>
+          <div>
+            <span class="block text-sm font-semibold text-slate-800">Dr. Melissa Sterling</span>
+            <span class="block text-[10px] text-slate-400 uppercase">Chief Surgeon, Ortho Group</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+        <div>
+          <!-- Stars -->
+          <div class="flex gap-1 text-amber-400 mb-6">
+            &#9733; &#9733; &#9733; &#9733; &#9733;
+          </div>
+          <p class="text-sm text-slate-600 leading-relaxed font-light mb-6 italic">
+            "Apex consulted us on corporate treasury management and credit restructure. They saved our operation over 140 basis points in financing fees, directly boosting our quarterly EBITDA performance."
+          </p>
+        </div>
+        <div class="flex items-center gap-3 border-t border-slate-50 pt-5">
+          <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden flex items-center justify-center font-bold text-emerald-900 text-sm font-serif">
+            A
+          </div>
+          <div>
+            <span class="block text-sm font-semibold text-slate-800">Arthur Chen</span>
+            <span class="block text-[10px] text-slate-400 uppercase">MD, Chen Capital LLC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- --- TRUST & FIDUCIARY STANDARDS --- -->
+  <section id="credentials" class="py-20 bg-emerald-950 text-white relative overflow-hidden">
+    <!-- Subtle gold accent glow -->
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-amber-400/5 rounded-full blur-3xl pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-amber-400 text-xs font-bold uppercase tracking-widest block mb-3">INTEGRITY MATRIX</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold tracking-tight mb-6">Fiduciary Standards Configured For Transparency</h2>
+        <p class="text-slate-200 font-light text-sm leading-relaxed mb-6">
+          We operate strictly as fee-only advisors under fiduciary mandate. This means we do not earn commissions on product sales, ensuring complete objective alignment with your growth goals.
+        </p>
+        
+        <ul class="space-y-4 text-xs font-semibold text-slate-300">
+          <li class="flex items-center gap-2.5">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            Registered Investment Advisor (RIA) Standard compliance
+          </li>
+          <li class="flex items-center gap-2.5">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            CFP&reg; (Certified Financial Planner) board fiduciary mandate
+          </li>
+          <li class="flex items-center gap-2.5">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            Open-architecture custodian security (Charles Schwab, Fidelity)
+          </li>
+        </ul>
+      </div>
+
+      <!-- Credential Badges Grid -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center">
+          <div class="text-amber-400 font-bold text-xl font-serif">CFP&reg;</div>
+          <span class="block text-[10px] text-slate-400 uppercase mt-1">Certified Planner</span>
+        </div>
+        <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center">
+          <div class="text-amber-400 font-bold text-xl font-serif">CFA</div>
+          <span class="block text-[10px] text-slate-400 uppercase mt-1">Chartered Analyst</span>
+        </div>
+        <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center">
+          <div class="text-amber-400 font-bold text-xl font-serif">CPA</div>
+          <span class="block text-[10px] text-slate-400 uppercase mt-1">Certified Accountant</span>
+        </div>
+        <div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center">
+          <div class="text-amber-400 font-bold text-xl font-serif">RIA</div>
+          <span class="block text-[10px] text-slate-400 uppercase mt-1">Fiduciary Advisor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- --- CONSULTATION BOOKING SECTION --- -->
+  <section id="booking" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+      <!-- Pitch Details Column -->
+      <div class="lg:col-span-5 space-y-6">
+        <span class="text-emerald-800 text-xs font-bold uppercase tracking-widest block">INITIAL CONGRUENCE SYNC</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-emerald-950 tracking-tight leading-tight">Book Your Free 30-Minute Advisory Strategic Review</h2>
+        <div class="w-12 h-1 bg-amber-400 rounded-full"></div>
+        
+        <p class="text-slate-500 font-light text-sm leading-relaxed">
+          Let us audit your current asset composition and tax structure. No pressure, no Sales pitches—just honest, highly quantitative insights.
+        </p>
+
+        <div class="space-y-4 pt-4 text-xs font-medium text-slate-600">
+          <div class="flex items-start gap-3">
+            <span class="w-6 h-6 rounded-full bg-emerald-50 text-emerald-800 flex items-center justify-center font-bold text-xs shrink-0">1</span>
+            <div>
+              <strong class="text-slate-800 block">Pre-Call Audit Survey:</strong>
+              <span class="text-slate-500 font-light">Provide key goals so our team can formulate a tailored research framework beforehand.</span>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="w-6 h-6 rounded-full bg-emerald-50 text-emerald-800 flex items-center justify-center font-bold text-xs shrink-0">2</span>
+            <div>
+              <strong class="text-slate-800 block">Structured Consultation:</strong>
+              <span class="text-slate-500 font-light">30 minutes reviewing optimization tactics, risk profiling, and estate preservation models.</span>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="w-6 h-6 rounded-full bg-emerald-50 text-emerald-800 flex items-center justify-center font-bold text-xs shrink-0">3</span>
+            <div>
+              <strong class="text-slate-800 block">Strategic Recommendation Draft:</strong>
+              <span class="text-slate-500 font-light">Receive a custom blueprint summary outline mapping your direct timeline goals.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Form Column -->
+      <div class="lg:col-span-7 bg-white p-8 md:p-10 rounded-3xl border border-slate-100 shadow-xl space-y-6">
+        <h3 class="text-2xl font-serif font-bold text-emerald-950">Secure Consultation Scheduler</h3>
+        
+        <!-- Form submission success container -->
+        <div id="booking-success-message" class="hidden bg-emerald-50 text-emerald-900 border border-emerald-200 p-6 rounded-2xl flex flex-col items-center text-center space-y-3">
+          <div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-800 text-xl">&#10004;</div>
+          <div>
+            <h4 class="font-bold text-base">Strategy Session Logged Successfully!</h4>
+            <p class="text-xs text-slate-500 mt-1 leading-relaxed">We have reserved your slot. A senior financial consultant will reach out via email to finalize custody details and sync calendar coordinates.</p>
+          </div>
+          <button id="dismiss-success" class="text-xs text-emerald-800 hover:text-emerald-950 font-semibold px-4 py-1.5 bg-white rounded-lg border border-emerald-200 shadow-sm transition">Dismiss</button>
+        </div>
+
+        <form id="consultation-form" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Full Name</label>
+              <input id="book-name" type="text" placeholder="Johnathan Doe" required class="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-emerald-800 bg-slate-50/50">
+            </div>
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Corporate Email</label>
+              <input id="book-email" type="email" placeholder="john@company.com" required class="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-emerald-800 bg-slate-50/50">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Target Advisory Goal</label>
+              <select id="book-service" required class="w-full px-3 py-3 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-emerald-800 bg-slate-50/50">
+                <option value="Wealth Design">Wealth Design</option>
+                <option value="Retirement Design">Retirement Design</option>
+                <option value="Tax Advisory">Tax Advisory</option>
+                <option value="Treasury Advisory">Treasury Advisory</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Target Date</label>
+              <input id="book-date" type="date" required class="w-full px-3 py-2.5 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-emerald-800 bg-slate-50/50">
+            </div>
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Preferred Slot Time</label>
+              <select id="book-time" required class="w-full px-3 py-3 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-emerald-800 bg-slate-50/50">
+                <option value="09:00 AM EST">09:00 AM EST</option>
+                <option value="11:30 AM EST">11:30 AM EST</option>
+                <option value="02:00 PM EST">02:00 PM EST</option>
+                <option value="04:30 PM EST">04:30 PM EST</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">Asset/Portfolio Scale Overview (Optional)</label>
+            <textarea id="book-notes" placeholder="Please outline any key details (e.g., target retirement horizon, tax concerns, or portfolio size)..." rows="3" class="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-emerald-800 bg-slate-50/50"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-emerald-900 hover:bg-emerald-800 text-white font-semibold py-3.5 rounded-xl shadow-md border border-emerald-950 transition">
+            Register for Advisory Sync
+          </button>
+        </form>
+
+        <!-- Dynamic Booking History Container (Saved locally) -->
+        <div id="booking-history-container" class="hidden border-t border-slate-100 pt-6 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-slate-400">My Consultation Bookings</h4>
+          <div id="booking-history-list" class="space-y-3 max-h-48 overflow-y-auto pr-1">
+            <!-- Rendered via script.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- --- FOOTER --- -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-16 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+      <div class="space-y-4">
+        <a href="#" class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-emerald-800 flex items-center justify-center text-amber-400 font-serif font-bold text-base shadow">
+            A
+          </div>
+          <div>
+            <span class="block font-serif font-bold text-sm tracking-tight text-white">APEX</span>
+            <span class="block text-[8px] uppercase font-semibold tracking-widest text-slate-500 -mt-0.5">Financial Consulting</span>
+          </div>
+        </a>
+        <p class="text-slate-500 text-[11px] leading-relaxed font-light">
+          Bespoke high-accuracy wealth modelling and strategic advisory registered under regulatory compliance structures.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-slate-200 font-bold uppercase text-[10px] tracking-wider mb-4">Advisory Pillars</h4>
+        <ul class="space-y-2 font-light">
+          <li><a href="#services" class="hover:text-white transition">Wealth Strategy</a></li>
+          <li><a href="#services" class="hover:text-white transition">Retirement Roadmaps</a></li>
+          <li><a href="#services" class="hover:text-white transition">Tax Restructuring</a></li>
+          <li><a href="#services" class="hover:text-white transition">Treasury Management</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-slate-200 font-bold uppercase text-[10px] tracking-wider mb-4">Interactive Suite</h4>
+        <ul class="space-y-2 font-light">
+          <li><a href="#tools" class="hover:text-white transition">Wealth Growth Modeler</a></li>
+          <li><a href="#tools" class="hover:text-white transition">Financial Resilience Index</a></li>
+          <li><a href="#booking" class="hover:text-white transition">Consultation Portal</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="text-slate-200 font-bold uppercase text-[10px] tracking-wider mb-4">Compliance & Safety</h4>
+        <p class="text-slate-500 text-[10px] leading-relaxed font-light">
+          All financial computations are approximations. Past performance is not indicative of future returns. SEC registration status does not imply an endorsement. Custodian protection is ensured up to SIPC limits.
+        </p>
+        <div class="text-[10px] text-slate-600 mt-2">
+          &copy; 2026 APEX Financial Consulting LLC. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link script.js -->
+  <script src="script.js" defer></script>
+</body>
+</html>

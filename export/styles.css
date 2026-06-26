@@ -1,0 +1,107 @@
+/* Standalone Custom Styles for Financial Consulting Landing Page */
+
+/* Base Styles & Typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  --color-emerald: #064e3b;
+  --color-mint: #10b981;
+  --color-gold: #d4af37;
+  --color-cream: #faf9f6;
+  --color-charcoal: #1e293b;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Hero Section Animations & Background */
+.hero-gradient {
+  background: linear-gradient(135deg, #022c22 0%, #064e3b 100%);
+}
+
+.gold-border-glow {
+  box-shadow: 0 4px 20px -2px rgba(212, 175, 55, 0.15);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #f59e0b 0%, #d4af37 50%, #b59023 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Interactive Calculator Styles */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #cbd5e1;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #10b981;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: all 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: #059669;
+}
+
+/* Interactive Tabs */
+.tab-btn.active {
+  color: #064e3b;
+  border-bottom-color: #10b981;
+}
+
+/* Floating Animation for Visual Interest */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Smooth Navigation Scroll */
+html {
+  scroll-behavior: smooth;
+}
